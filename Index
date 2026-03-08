@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<title>Accueil - Serveur Discord</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <h1>Mon Serveur Discord</h1>
+  <nav>
+    <a href="index.html">Accueil</a> |
+    <a href="roles.html">Grades</a> |
+    <a href="commands.html">Commandes</a> |
+    <a href="minecraft.html">Minecraft</a>
+  </nav>
+</header>
+<section>
+  <h2>Bienvenue 🤝</h2>
+  <p>Notre communauté de joueurs et amis.</p>
+  <a href="https://discord.gg/TONINVITE">👉 Rejoindre le Discord</a>
+</section>
+</body>
+</html>
