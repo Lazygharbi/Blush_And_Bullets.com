@@ -10,85 +10,113 @@
 body{
     margin:0;
     font-family:'Poppins', sans-serif;
-    background: linear-gradient(135deg,#1b0b2e,#2a0f4f,#3b146b);
+    background: radial-gradient(circle at top,#2d0b45,#12001f);
     color:white;
-    text-align:center;
 }
 
+/* Navbar */
 nav{
     display:flex;
     justify-content:space-between;
-    padding:20px 60px;
     align-items:center;
+    padding:20px 60px;
+    backdrop-filter: blur(10px);
+    background: rgba(255,255,255,0.03);
+    position:sticky;
+    top:0;
+    z-index:1000;
 }
 
 .logo{
     font-size:22px;
     font-weight:700;
+    letter-spacing:1px;
 }
 
 .btn{
-    background:#8b5cf6;
-    padding:12px 25px;
+    background: linear-gradient(45deg,#7c3aed,#a855f7);
+    padding:12px 28px;
     border-radius:30px;
     text-decoration:none;
     color:white;
+    font-weight:500;
     transition:0.3s;
+    box-shadow:0 0 15px rgba(168,85,247,0.4);
 }
 
 .btn:hover{
-    background:#a78bfa;
+    transform:scale(1.05);
 }
 
+/* Hero */
 .hero{
-    padding:120px 20px;
+    padding:150px 20px 100px;
+    text-align:center;
 }
 
 .hero h1{
-    font-size:65px;
-    margin-bottom:20px;
+    font-size:70px;
+    background: linear-gradient(90deg,#c084fc,#8b5cf6);
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;
+    margin-bottom:25px;
 }
 
 .hero p{
-    opacity:0.85;
-    font-size:20px;
     max-width:700px;
     margin:auto;
+    font-size:22px;
+    opacity:0.85;
+    line-height:1.6;
 }
 
+/* Features */
 .features{
     display:grid;
-    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
-    gap:25px;
-    padding:60px;
+    grid-template-columns: repeat(auto-fit,minmax(260px,1fr));
+    gap:30px;
+    padding:80px 80px 120px;
 }
 
 .card{
-    background:rgba(255,255,255,0.05);
-    backdrop-filter: blur(12px);
-    padding:30px;
-    border-radius:25px;
-    transition:0.3s;
+    background: rgba(255,255,255,0.04);
+    backdrop-filter: blur(15px);
+    padding:35px;
+    border-radius:28px;
+    transition:0.4s;
+    border:1px solid rgba(255,255,255,0.05);
 }
 
 .card:hover{
-    transform:translateY(-8px);
-    background:rgba(255,255,255,0.08);
+    transform:translateY(-12px) scale(1.03);
+    background: rgba(255,255,255,0.07);
 }
 
 .card h3{
     margin-top:0;
+    color:#c084fc;
 }
 
+.card p{
+    opacity:0.8;
+    line-height:1.6;
+}
+
+/* Footer */
 footer{
-    padding:40px;
-    opacity:0.7;
+    text-align:center;
+    padding:50px;
+    opacity:0.6;
+    font-size:14px;
 }
 
+/* Responsive */
 @media(max-width:768px){
-    .hero h1{font-size:40px;}
+    .hero h1{font-size:42px;}
     nav{padding:20px;}
+    .features{padding:40px 20px;}
 }
+
 </style>
 </head>
 
@@ -110,5 +138,30 @@ footer{
 </section>
 
 <section class="features">
+    <div class="card">
+        <h3>👑 Rôles & Grades</h3>
+        <p>Apprends comment progresser et débloquer des récompenses dans la communauté.</p>
+    </div>
 
-    <div class
+    <div class="card">
+        <h3>🛠️ Commandes Bot</h3>
+        <p>Liste des commandes essentielles pour utiliser nos bots Discord.</p>
+    </div>
+
+    <div class="card">
+        <h3>⛏️ Serveur Minecraft</h3>
+        <p>Rejoins notre serveur Minecraft dédié à la communauté.</p>
+    </div>
+
+    <div class="card">
+        <h3>🎉 Events</h3>
+        <p>Participe aux événements organisés par le staff.</p>
+    </div>
+</section>
+
+<footer>
+    © 2026 Serveur Discord Communautaire
+</footer>
+
+</body>
+</html>
